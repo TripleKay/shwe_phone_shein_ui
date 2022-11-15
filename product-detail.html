@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+    <link rel="stylesheet" href="./scss/custom.css">
+    <link rel="stylesheet" href="./resources/style/styel.css">
+</head>
+<body>
+    <header class="container-fluid bg-white site-nav" style="border-bottom: 1px solid #00000030">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg bg-white">
+                        <div class="container-fluid">
+                          
+                          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarTogglerDemo01">
+                            <a class="navbar-brand d-flex align-items-center" href="#">
+                                <img src="/resources/Images/logo.jpg" class="logo me-4" alt="" srcset="">
+                                <p class="mb-0 text-primary nav_logo_title d-none d-sm-none d-md-block">SHWE PHONE SHEIN GOLD & JEWELLERY</p>
+                            </a>
+                            <div class="d-none d-md-none d-lg-none d-xl-flex align-items-center">
+                                <button class="btn m-0 d-flex justify-content-center align-items-center"><i class="las la-search nav_icon search_btn"></i></button>
+                                <div class="mx-2">
+                                    <a href="" class="btn m-0 primary_btn">Sign Up</a>
+                                    <a href="" class="btn m-0 primary_outline_btn">Login</a>
+                                    <!-- <a href="" class="btn m-0 d-flex align-items-center"><i class="lar la-user nav_icon favourate_btn me-2"></i></a> -->
+                                </div>
+                                <div class="">
+                                    <a href="" class="btn m-0 d-flex align-items-center"><i class="lar la-heart nav_icon favourate_btn me-2"></i></a>
+                                </div>
+                                <!-- -------- launguage option -----------  -->
+                              <div class="">
+                                <select name="" id="" class="form-control">
+                                    <option value="" selected>EN</option>
+                                    <option value="">MM</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex">
+                            <!-- -------- launguage option -----------  -->
+                            <div class="">
+                                <select name="" id="" class="form-control d-inline-block d-md-inline-block d-lg-inline-block d-xl-none">
+                                    <option value="" selected>EN</option>
+                                    <option value="">MM</option>
+                                </select>
+                              </div>
+                                <!-- -------- mobile menu -----------  -->
+
+                              <button class="btn d-block d-md-block d-lg-block d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                <i class="las la-bars nav_icon"></i>
+                              </button>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            
+            <!-- search bar  -->
+            <div class="d-flex justify-content-between align-items-center rounded" style="border: 1px solid var(--bs-secondary)">
+                <div class="d-flex justify-content-center align-items-center p-2">
+                    <i class="las la-search text-primary"></i>
+                </div>
+                <input type="search" class="form-control search_input ps-2" placeholder="search....">
+            </div>
+            <!-- nav cat bar  -->
+            <div class="my-3">
+                <ul class="list-group ">
+                    <li class="list-group-item border-0"><a href="" class="btn px-0"></a> FAVOURATES</li>
+                    <li class="list-group-item border-0"><a href="" class="btn px-0"></a> PROUDCTS</li>
+                    <li class="list-group-item border-0"><a href="" class="btn px-0"></a> BLOG</li>
+                    <li class="list-group-item border-0 ">
+                        <!-- drop down button -->
+                        <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle px-0" data-bs-toggle="dropdown" aria-expanded="false">
+                            ABOUT <i class="las la-angle-down ms-2"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="list-group-item border-0">
+                        <!-- drop down button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn dropdown-toggle px-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                CUSTOMER SERVICES <i class="las la-angle-down ms-2"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- register form  -->
+            <div class="mx-2">
+                <a href="" class="btn m-0 primary_btn">Sign Up</a>
+                <a href="" class="btn m-0 primary_outline_btn">Login</a>
+            </div>
+            <div class="">
+                <a href="" class="btn m-0 d-flex align-items-center"></a>
+            </div>
+        </div>
+      </div>
+    <div class="container-fluid bg-white shadow-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="list-group flex-row justify-content-between align-items-center">
+                        <li class="list-group-item border-0 text-primary">PROUDCTS</li>
+                        <li class="list-group-item border-0 text-primary">BLOG</li>
+                        <li class="list-group-item border-0 text-primary ">
+                            <!-- drop down button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn dropdown-toggle text-primary" data-bs-toggle="dropdown" aria-expanded="false">
+                                ABOUT <i class="las la-angle-down ms-2"></i>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item border-0">
+                            <!-- drop down button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn dropdown-toggle text-primary" data-bs-toggle="dropdown" aria-expanded="false">
+                                CUSTOMER SERVICES <i class="las la-angle-down ms-2"></i>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------start float chat button ---------------------------------- -->
+    <div class="">
+        <a class="d-flex align-items-center justify-content-center btn btn-danger rounded-circle shadow chat_float_btn">
+            <i class="las la-sms nav_icon"></i>
+        </a>
+    </div>
+    <!-- -----------------------------------end float chat button ---------------------------------- -->
+
+    <!-- -----------------------------------start products detail---------------------------------- -->
+    <section class="container py-4">
+        <div class="row">
+            <div class="col-4  mx-auto">
+                <div class="product-img-slider sticky-side-div">
+                    <div class="swiper product-thumbnail-slider p-2 rounded bg-light swiper-initialized swiper-horizontal swiper-pointer-events">
+                        <div class="swiper-wrapper" id="swiper-wrapper-21e9638dc9531094f" aria-live="polite" style="transform: translate3d(-407px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="swiper-slide swiper-slide-prev" role="group" aria-label="1 / 4" style="width: 383px; margin-right: 24px;">
+                                <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/10-17-22_10593_ad33d1a3-58cf-42e4-a28a-1048a4ebb791_3000x.jpg?v=1666630185" alt="" class="img-fluid d-block">
+                            </div>
+                            <div class="swiper-slide swiper-slide-active" role="group" aria-label="2 / 4" style="width: 383px; margin-right: 24px;">
+                                <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/5_4d7f9a1c-2150-40a5-a1e9-6d5920b48fc8_3000x.jpg?v=1666369816" alt="" class="img-fluid d-block">
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" role="group" aria-label="3 / 4" style="width: 383px; margin-right: 24px;">
+                                <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/10-17-22_10593_ad33d1a3-58cf-42e4-a28a-1048a4ebb791_3000x.jpg?v=1666630185" alt="" class="img-fluid d-block">
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="4 / 4" style="width: 383px; margin-right: 24px;">
+                                <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/DSC_0054-2_1_f868f6eb-c6c1-43f4-b6d3-5d12bd2086b0_3462x.jpg?v=1666370135" alt="" class="img-fluid d-block">
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="4 / 4" style="width: 383px; margin-right: 24px;">
+                                <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/DSC_0054-2_1_f868f6eb-c6c1-43f4-b6d3-5d12bd2086b0_3462x.jpg?v=1666370135" alt="" class="img-fluid d-block">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-21e9638dc9531094f" aria-disabled="false"></div>
+                        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-21e9638dc9531094f" aria-disabled="false"></div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    <!-- end swiper thumbnail slide -->
+                    <div class="swiper product-nav-slider mt-2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-thumbs">
+                        <div class="swiper-wrapper" id="swiper-wrapper-3f49497fc10b95c83" aria-live="polite" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="swiper-slide swiper-slide-visible swiper-slide-active" role="group" aria-label="1 / 4" style="width: 92.25px; margin-right: 10px;">
+                                <div class="nav-slide-item ">
+                                    <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/10-17-22_10593_ad33d1a3-58cf-42e4-a28a-1048a4ebb791_3000x.jpg?v=1666630185" alt="" class="img-fluid d-block">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-visible swiper-slide-next swiper-slide-thumb-active" role="group" aria-label="2 / 4" style="width: 92.25px; margin-right: 10px;">
+                                <div class="nav-slide-item">
+                                    <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/5_4d7f9a1c-2150-40a5-a1e9-6d5920b48fc8_3000x.jpg?v=1666369816" alt="" class="img-fluid d-block">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-visible" role="group" aria-label="3 / 4" style="width: 92.25px; margin-right: 10px;">
+                                <div class="nav-slide-item">
+                                    <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/10-17-22_10593_ad33d1a3-58cf-42e4-a28a-1048a4ebb791_3000x.jpg?v=1666630185" alt="" class="img-fluid d-block">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-visible" role="group" aria-label="4 / 4" style="width: 92.25px; margin-right: 10px;">
+                                <div class="nav-slide-item">
+                                    <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/9-14-22_10208_800x.jpg?v=1666040479 " alt="" class="img-fluid d-block">
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-visible swiper-slide-active" role="group" aria-label="1 / 4" style="width: 92.25px; margin-right: 10px;">
+                                <div class="nav-slide-item ">
+                                    <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/9-14-22_10208_800x.jpg?v=1666040479" alt="" class="img-fluid d-block">
+                                </div>
+                            </div>
+                        </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    <!-- end swiper nav slide -->
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="card rounded border-0 mt-2">
+                    <div class="card-body py-4">
+                        <div class="px-4 d-flex justify-content-between align-items-center">
+                            <h3>ဘိတ်ပုလဲရွှေဆွဲသီ</h3>
+                            <a href="#" class="btn m-0 d-flex align-items-center"><i class="las la-heart nav_icon favourate_btn"></i></a>
+                        </div>
+                        <p class="px-4 mt-3">Current Price : <span class="fw-bold ms-3">240,000 MMK</span></p>
+                        <p class="px-4 text-black-50 my-3 long_para">ဆွဲကြိုးအရှည် 18လက်မ ဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေးဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေးဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေး ဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေး ဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေးဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေးဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေးဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေး ဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေးဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေးဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေးဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေးဘိတ်ပုလဲရွှေဆွဲသီး ၂ပဲ၃ရွေး!</p>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Product အချက်အလက်များ
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <th width="40%">ရတနာအမျိုးအစား</th>
+                                                    <td>Gold ( ‌‌ရွှေ )</td>
+                                                </tr>
+                                                <tr>
+                                                    <th width="40%">အရည်အသွေး</th>
+                                                    <td>
+                                                        21K ၁၄ပဲရည်</td>
+                                                </tr>
+                                                <tr>
+                                                    <th width="40%">Category</th>
+                                                    <td>
+                                                        လက်စွပ်</td>
+                                                </tr>
+                                                <tr>
+                                                    <th width="40%">အရောင်</th>
+                                                    <td>
+                                                        အဝါရောင်ရွှေ</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th width="40%">အမျိုးအစား
+                                                    </th>
+                                                    <td>
+                                                        အမျိုးသမီးဝတ်</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="px-4 my-3 d-flex gap-3">
+                            <a href="" class="btn primary_outline_btn d-flex align-items-center"><i class="las la-heart nav_icon favourate_btn me-2"></i>Add to Favourite</a>
+                            <a href="" class="btn primary_btn">To Buy</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container py-4">
+        <div class="row">
+            <div class="col-12">
+                <h3>Similar Products</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" owl-carousel owl-theme similar_product_slider">
+                <div class="item">
+                    <div class="card border-0 product_card ">
+                        <div class="card-body">
+                            <div class="position-relative overflow-hidden ">
+                                <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/9-14-22_10208_800x.jpg?v=1666040479" class="img-fluid border-0" alt="" srcset="">
+                                <div class="box-icon">
+                                    <ul>
+                                      <li data="Add to cart"><a href="#"><i class="las la-heart"></i></a></li>
+                                      <li data="View Detail"><a href="product-detail.html"><i class="las la-eye"></i></a></li>
+                                      <li data="facebook"><a href="#"><i class="las la-search"></i></a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class=" my-3">
+                                <h3 class="product_ title">READY TO SHIP MEN'S DIAMOND </h3>
+                                <span>100,000 MMK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 product_card ">
+                        <div class="card-body">
+                            <div class="position-relative overflow-hidden ">
+                                <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/9-14-22_10208_800x.jpg?v=1666040479" class="img-fluid border-0" alt="" srcset="">
+                                <div class="box-icon">
+                                    <ul>
+                                      <li data="Add to cart"><a href="#"><i class="las la-heart"></i></a></li>
+                                      <li data="View Detail"><a href="#"><i class="las la-eye"></i></a></li>
+                                      <li data="facebook"><a href="#"><i class="las la-search"></i></a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class=" my-3">
+                                <h3 class="product_ title">READY TO SHIP MEN'S DIAMOND </h3>
+                                <span>100,000 MMK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 product_card ">
+                        <div class="card-body">
+                            <div class="position-relative overflow-hidden ">
+                                <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/9-14-22_10208_800x.jpg?v=1666040479" class="img-fluid border-0" alt="" srcset="">
+                                <div class="box-icon">
+                                    <ul>
+                                      <li data="Add to cart"><a href="#"><i class="las la-heart"></i></a></li>
+                                      <li data="View Detail"><a href="#"><i class="las la-eye"></i></a></li>
+                                      <li data="facebook"><a href="#"><i class="las la-search"></i></a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class=" my-3">
+                                <h3 class="product_ title">READY TO SHIP MEN'S DIAMOND </h3>
+                                <span>100,000 MMK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0 product_card ">
+                        <div class="card-body">
+                            <div class="position-relative overflow-hidden ">
+                                <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/products/9-14-22_10208_800x.jpg?v=1666040479" class="img-fluid border-0" alt="" srcset="">
+                                <div class="box-icon">
+                                    <ul>
+                                      <li data="Add to cart"><a href="#"><i class="las la-heart"></i></a></li>
+                                      <li data="View Detail"><a href="#"><i class="las la-eye"></i></a></li>
+                                      <li data="facebook"><a href="#"><i class="las la-search"></i></a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class=" my-3">
+                                <h3 class="product_ title">READY TO SHIP MEN'S DIAMOND </h3>
+                                <span>100,000 MMK</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- -----------------------------------end products ---------------------------------- -->
+    <footer class="container-fluid bg-secondary py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="mb-4 text-white">Follow us</h3>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <a href="" class="btn d-flex align-items-center">
+                            <div class="bg-white d-flex align-items-center justify-content-center rounded-circle text-white" style="width: 30px; height: 30px;">
+                                <i class="lab la-facebook-f text-center text-primary"></i>
+                            </div>
+                            <p class="mb-0 ms-2 text-white">Facebook</p>
+                        </a>
+                        <a href="" class="btn d-flex align-items-center" style="width: 50%">
+                            <div class="bg-white d-flex align-items-center justify-content-center rounded-circle text-white" style="width: 30px; height: 30px;">
+                                <i class="lab la-facebook-f text-center text-primary"></i>
+                            </div>
+                            <p class="mb-0 ms-2 text-white">Facebook</p>
+                        </a>
+                        <a href="" class="btn d-flex align-items-center" style="width: 50%">
+                            <div class="bg-white d-flex align-items-center justify-content-center rounded-circle text-white" style="width: 30px; height: 30px;">
+                                <i class="lab la-facebook-f text-center text-primary"></i>
+                            </div>
+                            <p class="mb-0 ms-2 text-white">Facebook</p>
+                        </a>
+                        <a href="" class="btn d-flex align-items-center" style="width: 50%">
+                            <div class="bg-white d-flex align-items-center justify-content-center rounded-circle text-white" style="width: 30px; height: 30px;">
+                                <i class="lab la-facebook-f text-center text-primary"></i>
+                            </div>
+                            <p class="mb-0 ms-2 text-white">Facebook</p>
+                        </a>
+                        <a href="" class="btn d-flex align-items-center" style="width: 50%">
+                            <div class="bg-white d-flex align-items-center justify-content-center rounded-circle text-white" style="width: 30px; height: 30px;">
+                                <i class="lab la-facebook-f text-center text-primary"></i>
+                            </div>
+                            <p class="mb-0 ms-2 text-white">Facebook</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="col-4">
+                    <h3 class="mb-4 text-white">Shop</h3>
+                    <div class="">
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            All products
+                        </a>
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            All products
+                        </a>
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            All products
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3 class="mb-4 text-white">Customer Service</h3>
+                    <div class="">
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            How to order
+                        </a>
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            Contact
+                        </a>
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            FAQ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-12">
+                    <div class="d-flex align-items-baseline justify-content-between">
+                        <div class="">
+                            <a href="">
+                                <img src="/resources/Images/apple-store.png" alt="" class="img-fluid me-4" style="width: 150px" srcset="">
+                            </a>
+                            <a href="">
+                                <img src="/resources/Images/google-play.png" alt="" class="img-fluid" style="width: 150px" srcset="">
+                            </a>
+                        </div>
+                        <div class="">
+                            <a href="" class="btn">To Contact</a>
+                            <a href="" class="btn primary_btn">To Order</a>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    
+
+    <!-- start script -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./resources/script/navBar.js"></script>
+    <script src="./resources/script/productDetail.js"></script>
+    <script src="./resources/script/script.js"></script>
+    <!-- end script -->
+
+</body>
+</html>

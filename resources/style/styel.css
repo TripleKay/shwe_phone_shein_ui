@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 /* <!-- -----------------------------------basic setup  ---------------------------------- --> */
 
 html{
@@ -7,7 +8,7 @@ html{
 
 body {
     background: var(--bs-light);
-    font-family: 'Vidaloka', serif !important;
+    font-family: 'Vidaloka','Montserrat', sans-serif !important;
     overflow-x: hidden !important;
 }
 
@@ -104,6 +105,15 @@ h3 {
 }
 .search_input:focus {
     box-shadow: 0 0 0 0rem rgb(41 47 97 / 25%) !important;
+}
+
+.chat_float_btn {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    z-index: 9999;
 }
 /* <!-- -----------------------------------end nav bar ---------------------------------- --> */
 
@@ -316,6 +326,123 @@ h3 {
     
   }
 
+/* <!-- -------------------------------product detail-------------------------------------  --> */
+.product-img-slider .product-nav-slider .swiper-slide-thumb-active .nav-slide-item {
+    border: 1px solid var(--bs-secondary);
+}
+
+.long_para {
+    word-spacing: 5px;
+    line-height: 33px;
+    letter-spacing: .5px;
+}
+
+.accordion-button:not(.collapsed) {
+    /* color: var(--bs-accordion-active-color); */
+    background-color: var(--bs-light) !important;
+    /* box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color); */
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+  .image-wrapper {
+	height: 12rem;
+	width: 12rem;
+	border-radius: 6px;
+	background-color: #ccc;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	line-height: 1.6;
+
+	
+}
+
+.image-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+}
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine::before {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: -75%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+}
+
+.shine:hover::before, .shine:focus::before {
+    -webkit-animation: shine 1s;
+        animation: shine 1s;
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+.blog_card {
+    transition: .3s ease;
+}
+
+.blog_card:hover {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    transition: .3s ease;
+}
 /* <!-- -------------------------------responsive-------------------------------------  --> */
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */

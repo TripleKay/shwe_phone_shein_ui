@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="./scss/custom.css">
+    <link rel="stylesheet" href="./resources/style/styel.css">
+</head>
+<body>
+    <header class="container-fluid bg-white site-nav" style="border-bottom: 1px solid #00000030">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg bg-white">
+                        <div class="container-fluid">
+                          
+                          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarTogglerDemo01">
+                            <a class="navbar-brand d-flex align-items-center" href="#">
+                                <img src="/resources/Images/logo.jpg" class="logo me-4" alt="" srcset="">
+                                <p class="mb-0 text-primary nav_logo_title d-none d-sm-none d-md-block">SHWE PHONE SHEIN GOLD & JEWELLERY</p>
+                            </a>
+                            <div class="d-none d-md-none d-lg-none d-xl-flex align-items-center">
+                                <button class="btn m-0"><i class="las la-search nav_icon search_btn"></i></button>
+                                <div class="mx-2">
+                                    <a href="" class="btn m-0 primary_btn">Sign Up</a>
+                                    <a href="" class="btn m-0 primary_outline_btn">Login</a>
+                                </div>
+                                <div class="">
+                                    <a href="" class="btn m-0 d-flex align-items-center"><i class="lar la-heart nav_icon favourate_btn me-2"></i></a>
+                                </div>
+                                <!-- -------- launguage option -----------  -->
+                              <div class="">
+                                <select name="" id="" class="form-control">
+                                    <option value="" selected>EN</option>
+                                    <option value="">MM</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex">
+                            <!-- -------- launguage option -----------  -->
+                            <div class="">
+                                <select name="" id="" class="form-control d-inline-block d-md-inline-block d-lg-inline-block d-xl-none">
+                                    <option value="" selected>EN</option>
+                                    <option value="">MM</option>
+                                </select>
+                              </div>
+                                <!-- -------- mobile menu -----------  -->
+
+                              <button class="btn d-block d-md-block d-lg-block d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                <i class="las la-bars nav_icon"></i>
+                              </button>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            
+            <!-- search bar  -->
+            <div class="d-flex justify-content-between align-items-center rounded" style="border: 1px solid var(--bs-secondary)">
+                <div class="d-flex justify-content-center align-items-center p-2">
+                    <i class="las la-search text-primary"></i>
+                </div>
+                <input type="search" class="form-control search_input ps-2" placeholder="search....">
+            </div>
+            <!-- nav cat bar  -->
+            <div class="my-3">
+                <ul class="list-group ">
+                    <li class="list-group-item border-0"><a href="" class="btn px-0"></a> FAVOURATES</li>
+                    <li class="list-group-item border-0"><a href="" class="btn px-0"></a> PROUDCTS</li>
+                    <li class="list-group-item border-0"><a href="" class="btn px-0"></a> BLOG</li>
+                    <li class="list-group-item border-0 ">
+                        <!-- drop down button -->
+                        <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle px-0" data-bs-toggle="dropdown" aria-expanded="false">
+                            ABOUT <i class="las la-angle-down ms-2"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="list-group-item border-0">
+                        <!-- drop down button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn dropdown-toggle px-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                CUSTOMER SERVICES <i class="las la-angle-down ms-2"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- register form  -->
+            <div class="mx-2">
+                <a href="" class="btn m-0 primary_btn">Sign Up</a>
+                <a href="" class="btn m-0 primary_outline_btn">Login</a>
+            </div>
+            <div class="">
+                <a href="" class="btn m-0 d-flex align-items-center"></a>
+            </div>
+        </div>
+      </div>
+    <div class="container-fluid bg-white shadow-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="list-group flex-row justify-content-between align-items-center">
+                        <li class="list-group-item border-0 text-primary">PROUDCTS</li>
+                        <li class="list-group-item border-0 text-primary">BLOG</li>
+                        <li class="list-group-item border-0 text-primary ">
+                            <!-- drop down button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn dropdown-toggle text-primary" data-bs-toggle="dropdown" aria-expanded="false">
+                                ABOUT <i class="las la-angle-down ms-2"></i>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item border-0">
+                            <!-- drop down button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn dropdown-toggle text-primary" data-bs-toggle="dropdown" aria-expanded="false">
+                                CUSTOMER SERVICES <i class="las la-angle-down ms-2"></i>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------start blogs ---------------------------------- -->
+   <section class="container py-4">
+    <div class="row">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-4">
+            <div class="card border-0 rounded blog_card">
+                <div class="card-body">
+                    <div class="image-wrapper shine">
+                        <img src="https://cdn.shopify.com/s/files/1/0094/2299/5553/articles/Blog_Images_1_18fc4ea0-5b36-442a-a893-45fa1daeedba_540x.png?v=1665089940" class="img-fluid" alt="" srcset="">
+                    </div>
+                    <h3 class="mt-3">Paris Diaries</h3>
+                    <p class="long_param my-3" style="font-family: 'Montserrat';"> We had such an incredible week in the city of love. Our days were filled with memorable showings, photoshoots, croissants, exploring & diamonds (of course). We recap our most memorable.....</p>   
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class=" mb-0" style="font-family: 'Montserrat';">Posted 13 min ago</p>
+                        <a href="" class="btn primary_outline_btn">Read More <i class="las la-long-arrow-alt-right"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+   </section>
+    
+    <!-- -----------------------------------end blogs ---------------------------------- -->
+    <footer class="container-fluid bg-secondary py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="mb-4 text-white">Follow us</h3>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <a href="" class="btn d-flex align-items-center">
+                            <div class="bg-white d-flex align-items-center justify-content-center rounded-circle text-white" style="width: 30px; height: 30px;">
+                                <i class="lab la-facebook-f text-center text-primary"></i>
+                            </div>
+                            <p class="mb-0 ms-2 text-white">Facebook</p>
+                        </a>
+                        <a href="" class="btn d-flex align-items-center" style="width: 50%">
+                            <div class="bg-white d-flex align-items-center justify-content-center rounded-circle text-white" style="width: 30px; height: 30px;">
+                                <i class="lab la-facebook-f text-center text-primary"></i>
+                            </div>
+                            <p class="mb-0 ms-2 text-white">Facebook</p>
+                        </a>
+                        <a href="" class="btn d-flex align-items-center" style="width: 50%">
+                            <div class="bg-white d-flex align-items-center justify-content-center rounded-circle text-white" style="width: 30px; height: 30px;">
+                                <i class="lab la-facebook-f text-center text-primary"></i>
+                            </div>
+                            <p class="mb-0 ms-2 text-white">Facebook</p>
+                        </a>
+                        <a href="" class="btn d-flex align-items-center" style="width: 50%">
+                            <div class="bg-white d-flex align-items-center justify-content-center rounded-circle text-white" style="width: 30px; height: 30px;">
+                                <i class="lab la-facebook-f text-center text-primary"></i>
+                            </div>
+                            <p class="mb-0 ms-2 text-white">Facebook</p>
+                        </a>
+                        <a href="" class="btn d-flex align-items-center" style="width: 50%">
+                            <div class="bg-white d-flex align-items-center justify-content-center rounded-circle text-white" style="width: 30px; height: 30px;">
+                                <i class="lab la-facebook-f text-center text-primary"></i>
+                            </div>
+                            <p class="mb-0 ms-2 text-white">Facebook</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="col-4">
+                    <h3 class="mb-4 text-white">Shop</h3>
+                    <div class="">
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            All products
+                        </a>
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            All products
+                        </a>
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            All products
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3 class="mb-4 text-white">Customer Service</h3>
+                    <div class="">
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            How to order
+                        </a>
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            Contact
+                        </a>
+                        <a href="" class="btn px-0 text-white d-flex align-items-center">
+                            FAQ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-12">
+                    <div class="d-flex align-items-baseline justify-content-between">
+                        <div class="">
+                            <a href="">
+                                <img src="/resources/Images/apple-store.png" alt="" class="img-fluid me-4" style="width: 150px" srcset="">
+                            </a>
+                            <a href="">
+                                <img src="/resources/Images/google-play.png" alt="" class="img-fluid" style="width: 150px" srcset="">
+                            </a>
+                        </div>
+                        <div class="">
+                            <a href="" class="btn">To Contact</a>
+                            <a href="" class="btn primary_btn">To Order</a>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    
+
+    <!-- start script -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./resources/script/navBar.js"></script>
+    <script src="./resources/script/script.js"></script>
+    <!-- end script -->
+
+    <script>
+
+    </script>
+
+</body>
+</html>

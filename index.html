@@ -23,13 +23,13 @@
                           <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarTogglerDemo01">
                             <a class="navbar-brand d-flex align-items-center" href="#">
                                 <img src="/resources/Images/logo.jpg" class="logo me-4" alt="" srcset="">
-                                <p class="mb-0 text-primary nav_logo_title d-none d-sm-none d-md-block">SHWE PHONE SHEIN GOLD & JEWELLERY</p>
+                                <p class="mb-0 text-primary nav_logo_title d-none d-sm-none d-md-block font_vidaloka">SHWE PHONE SHEIN GOLD & JEWELLERY</p>
                             </a>
                             <div class="d-none d-md-none d-lg-none d-xl-flex align-items-center">
                                 <button class="btn m-0"><i class="las la-search nav_icon search_btn"></i></button>
                                 <div class="mx-2">
                                     <a href="" class="btn m-0 primary_btn">Sign Up</a>
-                                    <a href="" class="btn m-0 primary_outline_btn">Login</a>
+                                    <button href="#" class="btn m-0 primary_outline_btn "  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
                                 </div>
                                 <div class="">
                                     <a href="" class="btn m-0 d-flex align-items-center"><i class="lar la-heart nav_icon favourate_btn me-2"></i></a>
@@ -115,7 +115,7 @@
             <!-- register form  -->
             <div class="mx-2">
                 <a href="" class="btn m-0 primary_btn">Sign Up</a>
-                <a href="" class="btn m-0 primary_outline_btn">Login</a>
+                <button href="#" class="btn m-0 primary_outline_btn "  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
             </div>
             <div class="">
                 <a href="" class="btn m-0 d-flex align-items-center"></a>
@@ -472,6 +472,51 @@
 
         </div>
       </div>
+
+
+ <!-- -----------------------------------start login form modal ---------------------------------- -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="input">
+                    <input type="email" placeholder="email" required />
+                    <span><i class="las la-envelope"></i></span>
+                </div>
+                <div class="input">
+                    <input type="password" placeholder="Password" required />
+                    <span><i class="las la-lock"></i></span>
+                </div>
+                <div class="px-2 d-flex justify-content-between align-items-center text-black-50">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label remember_me" for="flexCheckDefault">
+                          Remember Me
+                        </label>
+                      </div>
+                    <a href="#" class="text-decoration-none text-danger forget_password">Forget Password?</a>
+                </div>
+                <div class="my-4">
+                    <button class="btn btn-primary w-100 mb-2">Login</button>
+                    <div class="my-3 d-flex justify-content-between align-items-center">
+                        <div class="" style="width: 100%;height: 1px;background-color: #00000030;"></div>
+                        <div class="px-3">OR</div>
+                        <div class="" style="width: 100%;height: 1px;background-color: #00000030;"></div>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary w-100">Register</a>
+                </div>
+            </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
     <!-- -----------------------------------end products ---------------------------------- -->
     <footer class="container-fluid bg-secondary py-4">
         <div class="container">
